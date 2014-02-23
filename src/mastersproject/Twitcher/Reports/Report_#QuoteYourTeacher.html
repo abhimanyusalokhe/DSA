@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable(
+[
+['State','Positive','Negative'],
+['Alabama',25.0,75.0],
+['Alaska',26.666668,73.333336],
+['Arizona',23.529411,76.47059],
+['Arkansas',0.0,100.0],
+['California',30.32787,69.672134],
+['Colorado',30.000002,70.0],
+['Connecticut',41.666664,58.333332],
+['Delaware',75.0,25.0],
+['Florida',7.1428576,92.85714],
+['Georgia',16.666668,83.33333],
+['Hawaii',0.0,100.0],
+['Idaho',25.0,75.0],
+['Illinois',28.947369,71.05263],
+['Indiana',33.333336,66.66667],
+['Iowa',22.222223,77.77778],
+['Kansas',25.0,75.0],
+['Kentucky',21.428572,78.57143],
+['Louisiana',75.0,25.0],
+['Maine',33.333336,66.66667],
+['Maryland',14.285715,85.71429],
+['Massachusetts',33.333336,66.66667],
+['Michigan',15.789473,84.210526],
+['Minnesota',33.333336,66.66667],
+['Mississippi',12.5,87.5],
+['Missouri',28.57143,71.42857],
+['Montana',50.0,50.0],
+['Nebraska',37.5,62.5],
+['Nevada',29.411766,70.588234],
+['New Hampshire',28.57143,71.42857],
+['New Jersey',33.333336,66.66667],
+['New Mexico',11.111112,88.88889],
+['New York',29.411766,70.588234],
+['North Carolina',15.384616,84.61539],
+['North Dakota',0.0,100.0],
+['Ohio',22.222223,77.77778],
+['Oklahoma',33.333336,66.66667],
+['Oregon',26.31579,73.68421],
+['Pennsylvania',6.666667,93.333336],
+['Rhode Island',0.0,100.0],
+['South Carolina',0.0,100.0],
+['South Dakota',0.0,100.0],
+['Tennessee',20.0,80.0],
+['Texas',32.692307,67.30769],
+['Utah',0.0,100.0],
+['Vermont',0.0,100.0],
+['Virginia',20.0,80.0],
+['Washington',20.0,80.0],
+['West Virginia',14.285715,85.71429],
+['Wisconsin',50.0,50.0],
+['Wyoming',0.0,100.0],
+]);
+
+		var options = {
+			region: 'US',
+			resolution: 'provinces',
+     	displayMode: 'markers',
+     	colorAxis: {colors: ['red', 'green']}
+		};
+
+		var chart = new google.visualization.GeoChart(document.getElementById('geo_chart'));
+     chart.draw(data, options);
+     };
+    </script>
+
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['corechart']});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+[
+['Sentiment','Percentage'],
+['Positive',23.712738],
+['Negative',68.97019],
+['Neutral',7.317073],
+]);
+
+var options = {
+          title: 'Sentiment Break Up'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  	<h1>#QuoteYourTeacher total tweets: 738</h1>
+    <table>
+    <tr>
+    <td><div id='geo_chart' style='width: 800px; height: 500px;'></div></td>
+    <td><div id='pie_chart' style='width: 500px; height: 500px;'></div></td>
+    </tr>
+    </table>
+  </body>
+</html>
+

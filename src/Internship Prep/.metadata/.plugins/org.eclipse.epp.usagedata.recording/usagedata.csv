@@ -1,0 +1,8 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Invalid Project example:org.jboss.tools.central.jbossas.quickstart.numberguess",1329844979968
+error,log,,,"Invalid Project example:org.jboss.tools.central.jbossas.quickstart.login",1329844979968
+error,log,,,"Invalid Project example:org.jboss.tools.central.jbossas.quickstart.kitchensink",1329844979968
+started,bundle,org.jboss.tools.seam.core,3.3.0.v20111020-1412-H45-M4,"org.jboss.tools.seam.core",1329844980012
+error,log,,,"Invalid Project example:org.jboss.tools.central.jbossas.quickstart.jbossJavaee6Webapp",1329844980091
+error,log,,,"Invalid Project example:org.jboss.tools.central.jbossas.quickstart.jbossJavaee6Ear",1329844980091
+started,bundle,org.eclipse.wst.common.frameworks,1.2.101.v201107192200,"org.eclipse.wst.common.frameworks",1329844980780

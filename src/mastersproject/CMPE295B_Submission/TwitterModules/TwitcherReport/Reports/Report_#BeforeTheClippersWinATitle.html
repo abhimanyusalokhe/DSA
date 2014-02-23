@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable(
+[
+['State','Positive','Negative'],
+['Alabama',0,0],
+['Alaska',0,0],
+['Arizona',0.0,100.0],
+['Arkansas',0,0],
+['California',28.20513,71.794876],
+['Colorado',0.0,100.0],
+['Connecticut',0.0,100.0],
+['Delaware',0,0],
+['Florida',50.0,50.0],
+['Georgia',0.0,100.0],
+['Hawaii',0.0,100.0],
+['Idaho',0,0],
+['Illinois',0,0],
+['Indiana',0,0],
+['Iowa',0,0],
+['Kansas',0,0],
+['Kentucky',0,0],
+['Louisiana',0.0,100.0],
+['Maine',0,0],
+['Maryland',0,0],
+['Massachusetts',0,0],
+['Michigan',0.0,100.0],
+['Minnesota',0.0,100.0],
+['Mississippi',0,0],
+['Missouri',0,0],
+['Montana',0,0],
+['Nebraska',0,0],
+['Nevada',0.0,100.0],
+['New Hampshire',0,0],
+['New Jersey',0.0,100.0],
+['New Mexico',0,0],
+['New York',66.66667,33.333336],
+['North Carolina',100.0,0.0],
+['North Dakota',0,0],
+['Ohio',100.0,0.0],
+['Oklahoma',0,0],
+['Oregon',50.0,50.0],
+['Pennsylvania',33.333336,66.66667],
+['Rhode Island',0,0],
+['South Carolina',0.0,100.0],
+['South Dakota',0,0],
+['Tennessee',100.0,0.0],
+['Texas',48.0,52.0],
+['Utah',0,0],
+['Vermont',0,0],
+['Virginia',0.0,100.0],
+['Washington',33.333336,66.66667],
+['West Virginia',0,0],
+['Wisconsin',0.0,100.0],
+['Wyoming',0,0],
+]);
+
+		var options = {
+			region: 'US',
+			resolution: 'provinces',
+     	displayMode: 'markers',
+     	colorAxis: {colors: ['red', 'green']}
+		};
+
+		var chart = new google.visualization.GeoChart(document.getElementById('geo_chart'));
+     chart.draw(data, options);
+     };
+    </script>
+
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['corechart']});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+[
+['Sentiment','Percentage'],
+['Positive',29.82456],
+['Negative',59.64912],
+['Neutral',10.526316],
+]);
+
+var options = {
+          title: 'Sentiment Break Up'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  	<h1>#BeforeTheClippersWinATitle total tweets: 114</h1>
+    <table>
+    <tr>
+    <td><div id='geo_chart' style='width: 800px; height: 500px;'></div></td>
+    <td><div id='pie_chart' style='width: 500px; height: 500px;'></div></td>
+    </tr>
+    </table>
+  </body>
+</html>
+

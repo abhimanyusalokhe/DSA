@@ -1,0 +1,22 @@
+use strict;
+use warnings;
+
+print  "Enter IP address to validate: ";
+my $text = <stdin>;
+
+chomp($text);
+
+if( $text =~ m/(\d\d?\d?).(\d\d?\d?).(\d\d?\d?).(\d\d?\d?)/ )
+{
+	print "Valid IP format\n";
+	print "\$1 is $1\n";
+	print "\$2 is $2\n";
+	print "\$3 is $3\n";
+	print "\$4 is $4\n";
+
+}else
+{
+	print "Invalid IP format";
+}
+
+

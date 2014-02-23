@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="SkAQuAssign2"/>
+<fullyQualifiedTypeName name="LinkedLists.RemoveDuplicates"/>
+<fullyQualifiedTypeName name="LinkedLists.ListManipulation"/>
+<fullyQualifiedTypeName name="StacksAndQueues.Queue"/>
+<fullyQualifiedTypeName name="StacksAndQueues.Assign3"/>
+<fullyQualifiedTypeName name="StacksAndQueues.Assign5"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="Sorting.InsertionSort"/>
+<fullyQualifiedTypeName name="Sorting.SelectionSort"/>
+<fullyQualifiedTypeName name="Sorting.ArrayManipulation"/>
+<fullyQualifiedTypeName name="Searching.BinarySearch"/>
+<fullyQualifiedTypeName name="javax.xml.namespace.QName"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="TreeExecutor"/>
+<fullyQualifiedTypeName name="TreeExecutor.MyNode"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="BinaryTree.Node"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="ArraysAndStrings1.LongestPalindrome"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="Sorting.FirstRepeatedCharacterInString"/>
+<fullyQualifiedTypeName name="BinaryTree"/>
+<fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+<fullyQualifiedTypeName name="BinaryTreeSerialization"/>
+<fullyQualifiedTypeName name="BinaryTreeSerialization.Node"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.DataInputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+</qualifiedTypeNameHistroy>

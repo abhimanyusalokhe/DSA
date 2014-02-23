@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable(
+[
+['State','Positive','Negative'],
+['Alabama',15.384616,84.61539],
+['Alaska',0.0,100.0],
+['Arizona',46.666668,53.333336],
+['Arkansas',20.0,80.0],
+['California',24.590164,75.409836],
+['Colorado',0.0,100.0],
+['Connecticut',0.0,100.0],
+['Delaware',0,0],
+['Florida',14.814815,85.18519],
+['Georgia',24.0,76.0],
+['Hawaii',0,0],
+['Idaho',0,0],
+['Illinois',5.0,95.0],
+['Indiana',0.0,100.0],
+['Iowa',0.0,100.0],
+['Kansas',25.0,75.0],
+['Kentucky',25.0,75.0],
+['Louisiana',10.0,90.0],
+['Maine',0.0,100.0],
+['Maryland',40.0,60.000004],
+['Massachusetts',0.0,100.0],
+['Michigan',34.615387,65.38461],
+['Minnesota',66.66667,33.333336],
+['Mississippi',0,0],
+['Missouri',8.695652,91.30435],
+['Montana',0.0,100.0],
+['Nebraska',16.666668,83.33333],
+['Nevada',33.333336,66.66667],
+['New Hampshire',100.0,0.0],
+['New Jersey',8.333334,91.66667],
+['New Mexico',0.0,100.0],
+['New York',16.666668,83.33333],
+['North Carolina',15.384616,84.61539],
+['North Dakota',0.0,100.0],
+['Ohio',13.333334,86.666664],
+['Oklahoma',0.0,100.0],
+['Oregon',0.0,100.0],
+['Pennsylvania',15.000001,85.0],
+['Rhode Island',0.0,100.0],
+['South Carolina',16.666668,83.33333],
+['South Dakota',0,0],
+['Tennessee',9.090909,90.909096],
+['Texas',13.157895,86.84211],
+['Utah',0.0,100.0],
+['Vermont',0,0],
+['Virginia',33.333336,66.66667],
+['Washington',27.272728,72.72727],
+['West Virginia',12.5,87.5],
+['Wisconsin',25.0,75.0],
+['Wyoming',0.0,100.0],
+]);
+
+		var options = {
+			region: 'US',
+			resolution: 'provinces',
+     	displayMode: 'markers',
+     	colorAxis: {colors: ['red', 'green']}
+		};
+
+		var chart = new google.visualization.GeoChart(document.getElementById('geo_chart'));
+     chart.draw(data, options);
+     };
+    </script>
+
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['corechart']});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+[
+['Sentiment','Percentage'],
+['Positive',18.19961],
+['Negative',80.62623],
+['Neutral',1.1741683],
+]);
+
+var options = {
+          title: 'Sentiment Break Up'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  	<h1>#PeopleIReallyWantToMeet total tweets: 511</h1>
+    <table>
+    <tr>
+    <td><div id='geo_chart' style='width: 800px; height: 500px;'></div></td>
+    <td><div id='pie_chart' style='width: 500px; height: 500px;'></div></td>
+    </tr>
+    </table>
+  </body>
+</html>
+
